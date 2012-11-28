@@ -28,7 +28,7 @@ public class FixedPrefixStemmer implements Stemmer {
 
     public String stem(String str) {
         if (str.length() > fixedPrefixLength)
-            return str.substring(0, fixedPrefixLength-1);
+            return str.substring(0, fixedPrefixLength);
         else
             return str;
     }
